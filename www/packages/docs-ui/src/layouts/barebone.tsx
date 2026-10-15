@@ -1,6 +1,5 @@
 import clsx from "clsx"
 import React from "react"
-import { GoogleAnalytics } from "@next/third-parties/google"
 
 export type BareboneLayoutProps = {
   htmlClassName?: string
@@ -17,7 +16,6 @@ export const BareboneLayout = ({
     <html lang="en" className={clsx("h-full w-full", htmlClassName)}>
       <head />
       {children}
-      <GoogleAnalytics gaId={gaId || "temp"} />
     </html>
   )
 }
